@@ -1,0 +1,91 @@
+.route {
+  position: relative;
+  padding-left: 32px;
+}
+
+.route__line {
+  position: absolute;
+  left: 7px;
+  top: 8px;
+  bottom: 8px;
+  width: 1px;
+  background: linear-gradient(to bottom, var(--accent), var(--border-strong));
+  opacity: 0.8;
+}
+
+.route__stop {
+  position: relative;
+  margin-bottom: 56px;
+}
+
+.route__stop:last-child {
+  margin-bottom: 0;
+}
+
+.route__dot {
+  position: absolute;
+  left: -32px;
+  top: 4px;
+  width: 16px;
+  height: 16px;
+  border-radius: 999px;
+  border: 2px solid var(--accent);
+  background: var(--bg);
+}
+
+.route__tags {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.route__code {
+  font-size: 11px;
+  letter-spacing: 0.15em;
+  color: var(--accent);
+  opacity: 0.85;
+}
+
+.route__status {
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  padding: 2px 8px;
+  border-radius: 4px;
+  border: 1px solid var(--border-strong);
+  color: var(--text-muted);
+}
+
+.route__status.is-active {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.route__title {
+  font-size: 20px;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.route__place {
+  font-size: 12px;
+  color: var(--text-faint);
+  margin: 4px 0 12px;
+}
+
+.route__detail {
+  color: var(--text-body);
+  line-height: 1.7;
+  max-width: 620px;
+  margin: 0;
+}
+
+@media (min-width: 640px) {
+  .route {
+    padding-left: 48px;
+  }
+  .route__dot {
+    left: -48px;
+  }
+}

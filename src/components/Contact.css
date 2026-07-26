@@ -1,0 +1,64 @@
+.contact__eyebrow {
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  color: var(--accent);
+  opacity: 0.85;
+  margin-bottom: 16px;
+}
+
+.contact__heading {
+  font-size: 30px;
+  color: var(--text-primary);
+  max-width: 480px;
+  line-height: 1.25;
+  margin: 0;
+}
+
+.contact__sub {
+  color: var(--text-muted);
+  max-width: 420px;
+  margin-top: 16px;
+}
+
+.contact__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 32px;
+}
+
+.contact__btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  border-radius: 999px;
+  padding: 12px 24px;
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.contact__btn--primary {
+  background: var(--accent);
+  color: var(--accent-contrast);
+  font-weight: 500;
+}
+
+.contact__btn--primary:hover {
+  filter: brightness(1.08);
+}
+
+.contact__btn--ghost {
+  border: 1px solid var(--border-strong);
+  color: var(--text-primary);
+}
+
+.contact__btn--ghost:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+@media (min-width: 640px) {
+  .contact__heading {
+    font-size: 36px;
+  }
+}
