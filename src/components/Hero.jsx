@@ -56,7 +56,7 @@ export default function Hero() {
               >
                 <Download size={16} /> Download resume
               </a>
-              <a href={`mailto:${profile.email}`} className="header__cta font-mono">
+              <a href={`mailto:${profile.email}`} className="social-links__btn social-links__btns font-mono">
             Hire me <ArrowUpRight size={14} />
           </a>
             </div>

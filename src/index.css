@@ -82,7 +82,8 @@ button {
 .container {
   max-width: var(--max-width);
   margin: 0 auto;
-  padding: 0 24px;
+  padding-right: 24px !important;
+  padding-left: 24px !important;
 }
 
 .section {
@@ -100,4 +101,11 @@ button {
 
 .font-mono {
   font-family: var(--font-mono);
+}
+
+@media (min-width: 1200px) {
+  .container {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+}
 }

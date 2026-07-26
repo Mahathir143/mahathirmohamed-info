@@ -8,11 +8,15 @@ const OPTIONS = [
   { key: "dark", icon: Moon, label: "Dark" },
 ];
 
-export default function ThemeToggle() {
+export default function ThemeToggle({cta}) {
   const { mode, setMode } = useTheme();
 
   return (
-    <div className="theme-toggle" role="radiogroup" aria-label="Theme">
+    <div
+      className={`theme-toggle ${cta ? "header__cta" : ""}`}
+      role="radiogroup"
+      aria-label="Theme"
+    >
       {OPTIONS.map(({ key, icon: Icon, label }) => (
         <button
           key={key}

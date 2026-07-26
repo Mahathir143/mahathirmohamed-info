@@ -20,7 +20,7 @@ export default function Header() {
     <header className="header">
       <div className="container header__row">
         <a href="#top" className="header__brand font-display">
-          S. Mohamed Mohamed<span className="header__brand-dot">.</span>
+          S. Mahathir Mohamed<span className="header__brand-dot">.</span>
         </a>
 
         <nav className="header__nav">
@@ -35,7 +35,7 @@ export default function Header() {
           {/* <div className="header__socials">
             <SocialLinks variant="icons" />
           </div> */}
-          <ThemeToggle />
+          <ThemeToggle  cta="header__cta"/>
           <a href={`mailto:${profile.email}`} className="header__cta font-mono">
             Hire me <ArrowUpRight size={14} />
           </a>
@@ -61,6 +61,7 @@ export default function Header() {
           <div className="header__mobile-socials">
             <SocialLinks variant="icons" />
           </div>
+          <ThemeToggle  cta=""/>
         </div>
       )}
     </header>
