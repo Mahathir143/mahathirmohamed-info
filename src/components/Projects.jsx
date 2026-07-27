@@ -28,7 +28,7 @@ export default function Projects() {
                   <h3 className="project-card__name font-display">{p.name}</h3>
                 </div>
 
-                {p.featured && (
+                {/* {p.featured && (
                   <div className="project-card__badges">
                     {p.featuredTitle.split(",").map((item, index) => (
                       <span
@@ -39,7 +39,7 @@ export default function Projects() {
                       </span>
                     ))}
                   </div>
-                )}
+                )} */}
               </div>
               <p className="project-card__org">{p.org}</p>
               <p className="project-card__desc">{p.description}</p>
@@ -53,7 +53,9 @@ export default function Projects() {
               </ul>
               <div className="project-card__stack">
                 {p.stack.map((t) => (
-                  <Tag key={t}>{t}</Tag>
+                  <Tag key={t}>
+                    {t}
+                  </Tag>
                 ))}
               </div>
             </article>
