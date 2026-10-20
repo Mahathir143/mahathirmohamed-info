@@ -30,14 +30,14 @@ export const socials = {
 };
 
 export const stats = [
-  { code: "BACKEND-01", label: "Years .NET & C# Development", value: "5.2+" },
+  { code: "BACKEND-01", label: "Years .NET & C# Development", value: "5.4+" },
   { code: "FRONTEND-02", label: "Years React.js Development", value: "3+" },
   { code: "ARCH-03", label: "Years Microservices Architecture", value: "4+" },
   { code: "DATABASE-04", label: "Years SQL Server Development", value: "5+" },
 ];
 
 export const summary =
-  "I'm a Senior .NET Full Stack Developer with 5.2+ years of experience designing and developing scalable, secure, and high-performance web applications using Microsoft technologies.\n\n" +
+  "I'm a Senior .NET Full Stack Developer with 5.4+ years of experience designing and developing scalable, secure, and high-performance web applications using Microsoft technologies.\n\n" +
   "My core expertise includes C#, .NET 8, ASP.NET Core Web API, MVC, Entity Framework Core, SQL Server, PostgreSQL, and Microservices architecture.\n\n" +
   "I specialize in building enterprise-level applications with clean architecture, RESTful APIs, authentication, database optimization, and performance-focused solutions. I also have experience developing modern user interfaces using React.js, Next.js, JavaScript, HTML5, and CSS3 to deliver complete end-to-end applications.\n\n" +
   "Having worked across Logistics, Banking, Retail POS, and Travel domains, I focus on writing clean, maintainable code and delivering reliable software solutions that create real business value.";
@@ -61,9 +61,9 @@ export const skillGroups = [
     tags: [
       ".NET 8",
       "ASP.NET Core",
-      "Web API",
+      ".Net Framework",
       "RESTful APIs",
-      "Entity Framework Core",
+      "EF Core",
       "Dapper",
       "ADO.NET",
       "Express.js"
@@ -77,8 +77,7 @@ export const skillGroups = [
       "Next.js",
       "Bootstrap",
       "Responsive UI/UX",
-      "UI Theming",
-      "JavaScript ES6+"
+      "UI Theming (Light/Dark/Multicolour)"
     ],
   },
   {
@@ -111,7 +110,8 @@ export const skillGroups = [
     icon: "cloud",
     title: "DevOps & Cloud",
     tags: [
-      "GitHub",
+      "Git",
+      "Bitbucket",
       "Azure DevOps (Basics)",
       "Docker (Basics)",
       "CI/CD (Basics)",
@@ -128,6 +128,7 @@ export const skillGroups = [
       "MySQL Workbench",
       "pgAdmin",
       "Postman",
+      "Jira",
       "IIS",
       "Swagger"
     ],
@@ -155,9 +156,32 @@ export const route = [
     detail:
       "Own React.js and Next.js frontends across logistics, banking, and retail POS products, backed by .NET 8 microservices behind an Ocelot gateway. Shipped Cargo Booking, Container Tracking, and Truck Allocation; mentor juniors and run code reviews.",
   },
+  {
+    code: "Aug 2026 - Oct 2026",
+    org: "Vega Intelli Soft Pvt Ltd",
+    role: "Senior .Net Developer (Contractor / Hybrid at UST)",
+    place: "Chennai",
+    // status: "IN TRANSIT",
+    status: "COMPLETED",
+    detail:
+      "Working as a contractor in a hybrid model at UST for the US-based healthcare client Elevance Health, contributing to the migration of legacy MVC applications to modern Web API architecture. Developing backend features and enterprise solutions using .NET Framework, .NET Core, and C#, collaborating with cross-functional teams in Agile environments using Jira and Bitbucket, and testing and validating APIs using Postman.",
+  }
 ];
 
 export const projects = [
+  {
+    name: "Elevance Health Care Project",
+    org: "Vega Intelli Soft Pvt Ltd (Client: UST)",
+    featured: true,
+    featuredTitle: ".Net, C#",
+    description: "Healthcare domain project focused on modernizing legacy ASP.NET MVC applications into scalable Web API services.",
+    points: [
+      "Migrating legacy MVC applications to modern Web API architecture using .NET Framework, .NET Core, and C#.",
+      "Developing backend components and testing REST APIs, endpoints, and data contracts using Postman.",
+      "Managing tasks, sprints, branching, and pull requests using Jira and Bitbucket in an Agile environment.",
+    ],
+    stack: [".NET Framework", ".NET Core", "C#", "Web API", "MVC", "Jira", "Bitbucket", "Postman"],
+  },
   {
     name: "Cargo Bridge Logistics System",
     org: "Easy Outdesk Pvt Ltd",
